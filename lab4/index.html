@@ -3,94 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lab4</title>
+    <title>WAD-Lab 4 - Student Records</title>
     <link rel="stylesheet" href="style.css">
-    
 </head>
 <body>
-   
-        <h1>Studnet data</h2>
+    <header>
+        <nav>
+            <img  id= "logo" src="OIP.jfif" alt="">
+    <p>lab task 4</p>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Gradesheet Table -->
         <table>
+            <caption>Student Gradesheet</caption>
             <thead>
-          <tr>
-                <th>Studnet name </th>
-                <th>Email</th>
-                <th>reg no</th>
-                <th>reg no</th>
-                <th>reg no</th>
-            </tr>
-        </thead>
-            <tr>
-                <td>usamn</td>
-                <td>usamnmustafa3123@gmail.com</td>
-                <td>08941039841</td>
-                <td>08941039841</td>
-                <td>08941039841</td>
-            </tr>
-            <tr>
-                <td>asjad</td>
-                <td>asjad@gmail.com</td>
-                <td>314791749128</td>
-                <td>314791749128</td>
-                <td>314791749128</td>
-            </tr>
-            <tr>
-                <td>asjad</td>
-                <td>asjad@gmail.com</td>
-                <td>314791749128</td>
-                <td>314791749128</td>
-                <td>314791749128</td>
-            </tr>
-            <tr>
-                <td>asjad</td>
-                <td>asjad@gmail.com</td>
-                <td>314791749128</td>
-                <td>314791749128</td>
-                <td>314791749128</td>
-            </tr>
-            <tr>
-                <td>asjad</td>
-                <td>asjad@gmail.com</td>
-                <td>314791749128</td>
-                <td>314791749128</td>
-                <td>314791749128</td>
-            </tr>
-            <tr>
-                <td>asjad</td>
-                <td>asjad@gmail.com</td>
-                <td>314791749128</td>
-                <td>314791749128</td>
-                <td>314791749128</td>
-            </tr>
-            <tr>
-                <td>asjad</td>
-                <td>asjad@gmail.com</td>
-                <td>314791749128</td>
-                <td>314791749128</td>
-                <td>314791749128</td>
-            </tr>
-            <tr>
-                <td>asjad</td>
-                <td>asjad@gmail.com</td>
-                <td>314791749128</td>
-                <td>314791749128</td>
-                <td>314791749128</td>
-            </tr>
-            <tr>
-                <td>asjad</td>
-                <td>asjad@gmail.com</td>
-                <td>314791749128</td>
-                <td>314791749128</td>
-                <td>314791749128</td>
-            </tr>
-            <tr>
-                <td>asjad</td>
-                <td>asjad@gmail.com</td>
-                <td>314791749128</td>
-                <td>314791749128</td>
-                <td>314791749128</td>
-            </tr>
+                <tr>
+                    <th >Student ID</th>
+                    <th >Name</th>
+                    <th >Email</th>
+                    <th >Grade</th>
+                    <th >Enrolled</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1001</td>
+                    <td>Asjad</td>
+                    <td>asjad@uni.edu</td>
+                    <td>A</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>1002</td>
+                    <td>Usman</td>
+                    <td>usman@uni.edu</td>
+                    <td>B</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>1003</td>
+                    <td>Furqan</td>
+                    <td>furqan@uni.edu</td>
+                    <td>C</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>1004</td>
+                    <td>Mahdi</td>
+                    <td>mahdi@uni.edu</td>
+                    <td>A</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>1005</td>
+                    <td>Sumbal</td>
+                    <td>sumbal@uni.edu</td>
+                    <td>B+</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>1006</td>
+                    <td>Kalsoom</td>
+                    <td>kalsoom@uni.edu</td>
+                    <td>A-</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>1007</td>
+                    <td>Minahil</td>
+                    <td>minahil@uni.edu</td>
+                    <td>B</td>
+                    <td>No</td>
+                </tr>
+                <tr>
+                    <td>1008</td>
+                    <td>Taha</td>
+                    <td>taha@uni.edu</td>
+                    <td>A+</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>1009</td>
+                    <td>Ibrahim</td>
+                    <td>ibrahim@uni.edu</td>
+                    <td>C+</td>
+                    <td>Yes</td>
+                </tr>
+                <tr>
+                    <td>1010</td>
+                    <td>Gufran</td>
+                    <td>gufran@uni.edu</td>
+                    <td>A</td>
+                    <td>Yes</td>
+                </tr>
+            </tbody>
         </table>
-    </div>
+
+        <!-- Student Data Form -->
+        <form method="post"  id="studentForm">
+            <fieldset>
+                <legend>Add New Student</legend>
+                <div class="form">
+                    <label for="fullName">Full Name:</label>
+                    <input type="text" id="fullName" required>
+                </div>
+                <div class="form">
+                    <label for="email">Email:</label>
+                    <input  type="email" id="email" required>
+                </div>
+                <div class="form">
+                    <label for="birthDate">Birth Date:</label>
+                    <input type="date" id="birthDate" required>
+                </div>
+                <div class="form">
+                    <label for="course">Course:</label>
+                    <select id="course">
+                        <option value="1">Computer Science</option>
+                        <option value="2">Engineering</option>
+                        <option value="3">Business</option>
+                    </select>
+                </div>
+                <div class="form">
+                    <label for="grade">Expected Grade:</label>
+                    <input type="number" id="grade" min="0" max="100">
+                </div>
+                <button type="submit">Add Student</button>
+            </fieldset>
+        </form>
+
+        <!-- Report Section -->
+        <section class="report">
+            <h2>Design Report</h2>
+            <p>
+                Is assignment mein humne semantic HTML elements 
+                (jaise table>, thead, form,fieldset,header, footer)
+                ka istemal karke webpage ka structure banaya, jisse content 
+                samajhne aur accessibility mein asani hoti hai. CSS selectors
+                (jaise nth-child se columns ki alternating colors, 
+                :hover se row highlight, ::placeholder se input hints ki styling)
+                ke zariye table aur form ko visually appealing aur user-friendly 
+                banaya hai. display: grid 
+                  se responsive layout bnaya hai
+                  .   
+             </p>
+                    
+                    
+                    
+                    
+        </section>
+    </main>
+
+    <footer>
+        <p> lab task . usman mustafa 04072213047</p>
+    </footer>
 </body>
 </html>
